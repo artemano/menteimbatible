@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
       <a href="#el-libro">El libro</a>
       <a href="#ciencia">La base científica</a>
       <a href="#estructura">Índice</a>
+      <a href="#muestra">Leer muestra</a>
       <a href="#autor">El autor</a>
       <a href="#sistema">+ Sistema</a>
       <a href="#comprar">Precio</a>
@@ -49,6 +50,7 @@
         </div>
         <a class="btn" data-checkout href="https://pay.hotmart.com/L107795089A?off=2qh6myos&amp;checkoutMode=10">Obtén el libro — $29 USD</a>
         <span class="btn-note">Libro digital (PDF) · Acceso inmediato · Garantía de 7 días</span>
+        <a class="hero-read" href="#leer" data-open-reader>O lee gratis las primeras páginas <span aria-hidden="true">→</span></a>
         <a class="upsell-chip" href="#sistema"><strong>Oferta al comprar:</strong> agrega el Sistema Mente Imbatible completo por solo <strong>+$8,90 USD</strong> <span aria-hidden="true">→</span></a>
       </div>
       <div class="hero-figure reveal">
@@ -296,6 +298,26 @@
     </div>
   </section>
 
+  <!-- MUESTRA: LEE LAS PRIMERAS PÁGINAS -->
+  <section class="alt" id="muestra">
+    <div class="wrap sample-layout">
+      <div class="reveal"><a class="sample-page" href="#leer" data-open-reader aria-label="Leer las primeras páginas del libro">
+        <span class="sp-eyebrow">Introducción</span>
+        <span class="sp-title">La voz que no pediste</span>
+        <span class="sp-orn">· · ·</span>
+        <span class="sp-text">Son las 7:14 de la noche. Cerraste la laptop hace diez minutos, pero tu mente no cerró nada. Repasas la reunión de las 4pm — esa frase que dijiste de más, esa que no dijiste y debiste. Repasas la lista de pendientes que no se movió ni un punto, a pesar de que trabajaste sin parar desde las 7 de la mañana. Y en algún lugar entre el cansancio y el silencio de la casa, aparece ella: la voz que te dice que no vas a lograrlo…</span>
+        <span class="sp-folio">6</span>
+      </a></div>
+      <div class="sample-copy reveal">
+        <span class="eyebrow">Lee antes de comprar</span>
+        <h2>Las primeras páginas, <em>gratis</em></h2>
+        <p>El índice completo, la introducción y el comienzo del capítulo 1, tal como aparecen en el libro. Sin registro: se leen aquí mismo, en tu navegador.</p>
+        <a class="btn-read" href="#leer" data-open-reader>Leer las primeras páginas <span aria-hidden="true">→</span></a>
+        <span class="sample-note">Páginas 1 a 10 de 83</span>
+      </div>
+    </div>
+  </section>
+
   <!-- PROTOCOLO -->
   <section class="alt">
     <div class="wrap protocol-block">
@@ -494,11 +516,107 @@
   </div>
 </footer>
 
+<!-- LECTOR DE LA MUESTRA -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Muestra del libro Silencia la Vocecita" hidden>
+  <div class="reader-bar">
+    <div class="reader-progress" id="readerProgress"></div>
+    <a class="reader-brand" href="#m-toc"><span class="mark"></span>Silencia la Vocecita <span class="reader-tag">Muestra</span></a>
+    <div class="reader-actions">
+      <a class="reader-buy" data-checkout href="https://pay.hotmart.com/L107795089A?off=2qh6myos&amp;checkoutMode=10">Obtén el libro — $29</a>
+      <button class="reader-close" id="readerClose" type="button" aria-label="Cerrar la muestra">×</button>
+    </div>
+  </div>
+  <div class="reader-scroll" id="readerScroll">
+    <article class="reader-page">
+
+<section class="rb-block rb-titlepage"><img class="rb-cover" src="images/portada.jpg" alt="Portada de Silencia la Vocecita" loading="lazy"><div class="title-page-inner"><div class="tp-eyebrow">Rafa Pino</div> <h2 class="tp-title">Silencia<br/>la Vocecita</h2><div class="tp-rule">· · ·</div> <p class="tp-subtitle">Técnicas de Intervención Mental para Apagar el Miedo y la Incertidumbre Justo Cuando Más Necesitas Calma y Claridad</p><p class="tp-copyright">© 2026 Rafa Pino. Todos los derechos reservados.<br/>Prohibida la reproducción total o parcial de esta obra, por cualquier medio<br/>o procedimiento, sin la autorización previa y por escrito del autor.</p></div></section>
+<section class="rb-block rb-toc" id="m-toc"><h2 class="indice-title">Índice</h2><ul class="toc-list"><li class="toc-entry in-sample"><div class="toc-line"><a class="toc-label" href="#m-sec-intro">Introducción — La voz que no pediste</a><span class="toc-meta">p. 6 · en la muestra</span></div> <div class="toc-desc">Por qué esa voz de miedo e incertidumbre no es un defecto de carácter sino un mecanismo de protección mal calibrado para tu vida actual. Qué vas a lograr con este libro.</div>
+</li><li class="toc-part"><span class="toc-part-label">Parte I — Entender el Programa</span></li><li class="toc-entry in-sample"><div class="toc-line"><a class="toc-label" href="#m-sec-chap-1">Capítulo 1 — Lo que realmente es la vocecita</a><span class="toc-meta">p. 10 · en la muestra</span></div> <div class="toc-desc">Que la voz autosaboteadora es un programa automático, no "tú". Introducción a la metáfora de la tabla hash: estímulo (o conjunto de estímulos) → programa específico → reacción repetida.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 2 — Cómo se instalan los programas mentales</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 14</span></div> <div class="toc-desc">Aprendizaje asociativo y neuroplasticidad hebbiana: por qué cada repetición hace el camino neuronal más fuerte y más automático. Cómo un mecanismo de defensa que te sirvió en el pasado deja de ser útil en tu vida actual.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 3 — El cuerpo reacciona antes que la mente</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 19</span></div> <div class="toc-desc">Teoría polivagal aplicada: los tres estados del sistema nervioso y por qué sientes la reacción (taquicardia, tensión, bloqueo) antes de poder pensar con claridad. Por qué la fuerza de voluntad sola no alcanza.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 4 — El 85-95%: por qué piensas lo mismo todos los días</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 24</span></div> <div class="toc-desc">La repetición del pensamiento como ciclo, los pensamientos automáticos negativos y la tríada cognitiva. Cómo esa repetición se convierte en "sentimiento" (sentir-mental) y termina sintiéndose como identidad.</div>
+</li><li class="toc-part"><span class="toc-part-label">Parte II — Las Técnicas de Intervención</span></li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 5 — El primer paso: hacerte consciente del patrón</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 29</span></div> <div class="toc-desc">Cómo identificar el momento exacto en que se dispara un programa, antes de poder intervenirlo. Ejercicio de registro de disparadores.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 6 — La pausa que cambia todo: mindfulness y respiración</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 33</span></div> <div class="toc-desc">El corazón práctico del libro. Por qué la respiración lenta y consciente es, con evidencia real, la forma más rápida de bajar la activación del sistema nervioso y crear el espacio de calma donde una decisión distinta se vuelve posible — no una idea suelta, sino el paso que abre la puerta para que el mantram (Cap. 9) y el ancla (Cap. 10) realmente funcionen. Incluye una técnica de respiración simple y aplicable en cualquier momento, y qué dice la evidencia sobre mindfulness y pensamiento repetitivo/rumiación.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 7 — Hacerte cargo: la lección detrás del Ho'oponopono</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 38</span></div> <div class="toc-desc">Referencia anecdótica personal: cómo repetir el mantram "lo siento, perdón, gracias, te amo" ante un comportamiento reactivo por venir, sostenido en práctica diaria, llevó al punto en que la necesidad de reaccionar dejó de presentarse. La enseñanza real — asumir responsabilidad total por los propios actos y comprender que el nivel de consciencia de cada quien da forma a lo que le ocurre — importa más que la frase específica. El capítulo deja abierto que el lector explore otras técnicas que lo lleven a esa misma comprensión.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 8 — Afirmaciones que sí funcionan</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 43</span></div> <div class="toc-desc">Qué dice la investigación (teoría de la autoafirmación) sobre por qué las afirmaciones bajan el cortisol y mejoran la toma de decisiones bajo presión. Cómo escribir una afirmación que funcione (y los errores más comunes que la vuelven inútil).</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 9 — Mantras y repetición: instalar el nuevo camino</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 47</span></div> <div class="toc-desc">Cómo elegir un mantra propio, con qué frecuencia repetirlo y por qué la repetición con carga emocional es lo que realmente reconfigura el camino neuronal (conexión directa con el Capítulo 2). Cómo combinarlo con la respiración del Capítulo 6 para que el mantram se instale sobre un sistema nervioso ya calmado, no sobre uno todavía activado.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 10 — Anclas de activación: música, símbolos e imágenes</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 51</span></div> <div class="toc-desc">Cómo usar disparadores externos (una canción, un símbolo, una imagen) para recordarte el propósito de cambio en el momento exacto en que el programa antiguo intenta activarse. Protocolo simple para crear tu propia ancla, y cómo la secuencia respiración → mantram → ancla funciona como un solo movimiento entrenable, no como tres técnicas sueltas.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 11 — El calendario real del cambio: 21, 40 o 66 días</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 55</span></div> <div class="toc-desc">Qué dice la evidencia sobre cuánto toma instalar un nuevo automatismo, por qué la consistencia importa más que la perfección, y cómo diseñar tu propio plan de repetición.</div>
+</li><li class="toc-part"><span class="toc-part-label">Parte III — Integración y Sostenibilidad</span></li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 12 — Cuando la vocecita vuelve</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 60</span></div> <div class="toc-desc">Por qué las recaídas del patrón antiguo son parte normal del proceso y no una señal de fracaso. Cómo retomar sin culpa.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 13 — Tu protocolo diario</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 65</span></div> <div class="toc-desc">Cómo combinar las técnicas anteriores (pausa, frase, afirmación, ancla) en una rutina corta y sostenible, integrada con tus audios de neurohacking.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Capítulo 14 — Casos y ejemplos prácticos</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 69</span></div> <div class="toc-desc">Escenarios compuestos y realistas (una decisión bajo presión, una conversación difícil, un momento de comparación o duda) que muestran el proceso completo aplicado paso a paso.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Conclusiones — De pelear contra la vocecita a reprogramarla</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 73</span></div> <div class="toc-desc">Cierre que conecta todo el libro: el cambio no es silenciar la voz por la fuerza, es dejar de alimentar el programa y construir uno nuevo, con evidencia de que sí es posible.</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Glosario breve</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 77</span></div> <div class="toc-desc">términos clave explicados en una línea cada uno (neuroplasticidad, reconsolidación, ancla, automaticidad, etc.)</div>
+</li><li class="toc-entry"><div class="toc-line"><span class="toc-label">Referencias</span><span class="toc-meta locked"><svg aria-hidden="true" viewbox="0 0 16 16"><rect height="7" rx="1.5" width="10" x="3" y="7"></rect><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"></path></svg>p. 81</span></div> <div class="toc-desc">fuentes citadas a lo largo del libro.</div>
+</li></ul></section>
+<section class="rb-block rb-chapter" id="m-sec-intro"><div class="chapter-eyebrow">Introducción</div> <h2 class="chapter-title">La voz que no pediste</h2><div class="ornament">· · ·</div> <div class="body-text">
+<p>Son las 7:14 de la noche. Cerraste la laptop hace diez minutos, pero tu mente no cerró nada. Repasas la reunión de las 4pm — esa frase que dijiste de más, esa que no dijiste y debiste. Repasas la lista de pendientes que no se movió ni un punto, a pesar de que trabajaste sin parar desde las 7 de la mañana. Y en algún lugar entre el cansancio y el silencio de la casa, aparece ella: la voz que te dice que no vas a lograrlo, que ya deberías estar más adelante, que algo en ti no está funcionando como antes.</p><p>Si esa escena te resulta familiar, quiero decirte algo antes de que sigas leyendo: esa voz no es un defecto tuyo. No es debilidad, no es falta de disciplina, y ciertamente no es quien eres. Es un programa.</p><h3>Una voz, no un veredicto</h3><p>Durante años se nos ha enseñado a tratar esa voz interna de miedo y duda como si fuera la verdad sobre nosotros mismos — como si al hablarnos con ese tono de alarma, estuviera revelando algo cierto sobre nuestra capacidad o nuestro valor. Pero la neurociencia y la psicología llevan décadas mostrando algo distinto: esa voz es, casi siempre, un mecanismo de protección que en algún momento de tu vida te sirvió para algo, y que hoy se sigue activando aunque el peligro que le dio origen ya no exista.</p><p>Piénsalo así: tu cerebro no está diseñado para hacerte feliz ni para ayudarte a alcanzar tus metas. Está diseñado, ante todo, para mantenerte con vida. Y para lograrlo, aprende — de la forma más eficiente que puede — a asociar ciertos estímulos con ciertas reacciones automáticas. Una mirada, un tono de voz, una fecha límite, un silencio incómodo en una reunión: si en el pasado alguno de esos estímulos estuvo ligado a una amenaza real (el enojo de un jefe, el rechazo de un grupo, una decepción profunda), tu cerebro guardó esa asociación como un programa de emergencia. Y cada vez que el estímulo — o algo que se le parece — vuelve a aparecer, el programa se dispara. Solo. Sin pedirte permiso.</p>
+<p>Ese es exactamente el mecanismo que vas a entender a fondo en la Parte I de este libro: cómo se instalan esos programas, por qué el cuerpo reacciona antes de que la mente pueda pensar, y por qué entre el 85 y el 95% de lo que piensas hoy es, literalmente, lo mismo que pensaste ayer.</p><h3>Lo que este libro no es</h3><p>Este no es un libro sobre "pensamiento positivo". No te voy a pedir que sonrías más o que finjas calma cuando no la sientes. Silenciar esa voz a la fuerza, por pura voluntad, casi nunca funciona — y si alguna vez lo intentaste y no funcionó, no fue porque te faltara disciplina. Fue porque estabas peleando contra un automatismo con la única herramienta que ese automatismo siempre va a ganar: la fuerza de voluntad consciente, que se agota, contra un programa que no se cansa nunca.</p><p>Lo que sí vas a encontrar aquí es un conjunto de técnicas — respiración consciente, mantras, anclas de activación, afirmaciones bien construidas — que no buscan silenciar la voz por la fuerza, sino interrumpir el automatismo en el momento exacto en que se dispara, y sobre esa pausa, instalar algo nuevo. Cada una de estas técnicas tiene un porqué: no las vas a encontrar aquí porque suenan bien, sino porque hay evidencia real detrás de cada una — desde cómo la respiración lenta cambia, de forma medible y rápida, tu estado nervioso, hasta por qué la repetición constante durante semanas es lo que de verdad reconfigura un camino neuronal.</p><h3>Lo que sí vas a lograr</h3><p>Al terminar este libro vas a entender, con precisión, qué pasa en ti en el momento exacto en que una situación te saca de tu centro — y vas a tener, por primera vez, un método concreto para intervenir ese momento antes de que termine en una reacción que después lamentas. No se trata de convertirte en alguien que nunca siente miedo o incertidumbre — eso no le pasa a nadie, y no es la meta. Se trata de dejar de ser gobernado por una voz automática, y empezar a decidir tú, con calma, quién quieres ser en el momento en que más cuenta.</p><p>Marco Aurelio lo escribió hace casi dos mil años, en una línea que hoy la neurociencia solo confirma con otro lenguaje: <em>"Nuestra vida es aquello en que la convierten nuestros pensamientos."</em> Lo que vas a encontrar en las próximas páginas es, literalmente, cómo intervenir esos pensamientos en la raíz — no negándolos, sino comprendiéndolos, haciéndote cargo de ellos, y construyendo, repetición a repetición, uno nuevo.</p><p>Sigamos.</p><hr/></div>
+</section>
+<section class="rb-block rb-part" id="m-sec-part-I"><div class="part-num">Parte I</div> <div class="part-rule">· · ·</div> <h2 class="part-title">Entender el Programa</h2></section>
+<section class="rb-block rb-chapter" id="m-sec-chap-1"><div class="chapter-eyebrow">Capítulo 1</div> <h2 class="chapter-title">Lo que realmente es la vocecita</h2><div class="ornament">· · ·</div> <figure class="plate"><img alt="El programa automático: estímulo → programa → reacción" height="1000" loading="lazy" src="images/diagrama-programa.jpg" width="1000"/></figure><div class="body-text">
+<p>Son las 3:40 de la tarde y tu jefe te escribe: "¿Tienes un minuto para hablar?". No dice de qué. No dice si es bueno o malo. Y aun así, antes de que puedas leer la frase completa por segunda vez, ya sientes el pecho apretado, ya estás repasando mentalmente los últimos tres proyectos buscando en cuál te equivocaste, ya escuchaste, con toda claridad, esa voz que te dice: "algo hiciste mal".</p><p class="rb-cut">No decidiste pensar eso. No lo evaluaste, no sopesaste evidencia, no le diste ninguna oportunidad a la posibilidad —mucho más probable, estadísticamente— de que tu jefe solo quiera revisar una fecha de entrega. La reacción ya estaba ahí, completa, antes de que…</p></div></section>
+
+      <aside class="rb-end">
+        <span class="eyebrow">Aquí termina la muestra</span>
+        <h3>El capítulo 1 sigue con la metáfora de la <em>tabla hash</em>, el aprendizaje hebbiano y por qué esa voz no es tu personalidad.</h3>
+        <p>Son 14 capítulos, 14 láminas ilustradas y un protocolo diario que puedes empezar hoy.</p>
+        <a class="btn" data-checkout href="https://pay.hotmart.com/L107795089A?off=2qh6myos&amp;checkoutMode=10">Obtén el libro — $29 USD</a>
+        <span class="btn-note">Libro digital (PDF) · Acceso inmediato · Garantía de 7 días</span>
+        <button class="rb-back" type="button" data-close-reader>Volver a la página</button>
+      </aside>
+    </article>
+  </div>
+</div>
+<script>
+(function () {
+  var reader = document.getElementById("reader");
+  if (!reader) return;
+  var scroller = document.getElementById("readerScroll"), bar = document.getElementById("readerProgress");
+  var closeBtn = document.getElementById("readerClose"), lastFocus = null, pushed = false;
+  function open(push) {
+    if (!reader.hidden) return;
+    lastFocus = document.activeElement;
+    reader.hidden = false; document.documentElement.classList.add("reader-open");
+    scroller.scrollTop = 0; progress();
+    if (push) { history.pushState({ reader: 1 }, "", "#leer"); pushed = true; }
+    closeBtn.focus();
+  }
+  function close(fromPop) {
+    if (reader.hidden) return;
+    reader.hidden = true; document.documentElement.classList.remove("reader-open");
+    if (!fromPop) {
+      if (pushed) { pushed = false; history.back(); }
+      else if (location.hash === "#leer") history.replaceState(null, "", location.pathname + location.search);
+    } else pushed = false;
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  function progress() {
+    var m = scroller.scrollHeight - scroller.clientHeight;
+    bar.style.width = (m > 0 ? Math.min(100, scroller.scrollTop / m * 100) : 0) + "%";
+  }
+  document.querySelectorAll("[data-open-reader]").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); open(true); });
+  });
+  reader.querySelectorAll("[data-close-reader]").forEach(function (b) { b.addEventListener("click", function () { close(false); }); });
+  closeBtn.addEventListener("click", function () { close(false); });
+  scroller.addEventListener("scroll", progress, { passive: true });
+  reader.addEventListener("click", function (e) {           // enlaces internos del índice
+    var a = e.target.closest('a[href^="#m-"]'); if (!a) return;
+    var t = document.getElementById(a.getAttribute("href").slice(1)); if (!t) return;
+    e.preventDefault(); scroller.scrollTo({ top: t.offsetTop - 70, behavior: "smooth" });
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !reader.hidden) close(false); });
+  window.addEventListener("popstate", function () { if (location.hash === "#leer") open(false); else close(true); });
+  if (location.hash === "#leer") open(false);
+})();
+</script>
+
 <div class="sticky-cta" id="stickyCta">
   <span class="p">$29 USD <small>Libro digital · Garantía 7 días</small></span>
   <a class="btn" data-checkout href="https://pay.hotmart.com/L107795089A?off=2qh6myos&amp;checkoutMode=10">Obtener</a>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
