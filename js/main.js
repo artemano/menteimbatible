@@ -55,17 +55,3 @@
   }
 })();
 
-/* VSL: el botón de la portada reproduce el video y activa los controles */
-(function () {
-  var frame = document.querySelector(".video-frame");
-  if (!frame) return;
-  var video = frame.querySelector("video"), btn = frame.querySelector(".video-play");
-  if (!video || !btn) return;
-  btn.addEventListener("click", function () {
-    frame.classList.add("playing");
-    video.controls = true;
-    var p = video.play();
-    if (p && p.catch) p.catch(function () { /* el usuario puede usar los controles */ });
-  });
-  video.addEventListener("play", function () { frame.classList.add("playing"); video.controls = true; });
-})();

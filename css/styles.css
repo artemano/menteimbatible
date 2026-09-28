@@ -1627,6 +1627,7 @@ section.ink a.btn { box-shadow: 0 0 0 1px rgba(255, 250, 242, 0.25), 0 20px 40px
 }
 .video-play:hover span { transform: scale(1.06); background: #fffaf2; }
 .video-play:focus-visible span { outline: 3px solid var(--accent-soft); outline-offset: 4px; }
+.video-frame:not(.has-play) .video-play,
 .video-frame.playing .video-play { display: none; }
 @media (max-width: 640px) {
   .video-play span { width: 68px; height: 68px; }

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
 
@@ -59,11 +59,21 @@
         <h2>Por qué la niebla mental no se arregla con más disciplina</h2>
       </div>
       <div class="video-frame reveal">
-        <video playsinline preload="none" poster="video/vsl-poster.jpg">
+        <video controls playsinline preload="none" poster="video/vsl-poster.jpg">
           <source src="video/vsl-mente-imbatible.mp4" type="video/mp4">
           <track kind="subtitles" src="video/vsl-mente-imbatible.vtt" srclang="es" label="Español">
         </video>
         <button type="button" class="video-play" aria-label="Reproducir el video"><span></span></button>
+        <script>
+          (function () {
+            var f = document.currentScript.parentNode, v = f.querySelector("video"), b = f.querySelector(".video-play");
+            if (!v || !b) return;
+            v.controls = false; f.classList.add("has-play");
+            function start() { f.classList.add("playing"); v.controls = true; }
+            b.addEventListener("click", function () { start(); var p = v.play(); if (p && p.catch) p.catch(function () {}); });
+            v.addEventListener("play", start);
+          })();
+        </script>
       </div>
     </div>
   </section>
@@ -522,6 +532,6 @@
   <a class="btn" data-checkout href="https://pay.hotmart.com/F107381026O">Adquirir</a>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
