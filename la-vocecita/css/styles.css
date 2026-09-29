@@ -1792,3 +1792,12 @@ html.reader-open, html.reader-open body { overflow: hidden; }
 /* ---------- precio de prelanzamiento ---------- */
 .price-block .price .was { font-size: 0.42em; font-weight: 400; color: var(--warm-gray); margin-right: 0.3em; vertical-align: middle; }
 .upsell-price .row s { color: var(--warm-gray); margin-right: 4px; }
+
+/* ---------- widget de Hotmart: conservar el estilo propio de los botones secundarios ---------- */
+a.reader-buy.hotmart-fb, a.reader-buy.hotmart__button-checkout {
+  display: inline-block !important; padding: 9px 18px !important; font-family: var(--serif-body) !important;
+  font-size: 14.5px !important; font-weight: 600 !important; line-height: 1.3 !important; color: var(--paper-soft) !important;
+  background: var(--cta, #b5602f) !important; border: none !important; border-radius: 999px !important;
+  box-shadow: none !important; text-transform: none !important; letter-spacing: 0 !important; min-height: 0 !important; width: auto !important;
+}
+a.reader-buy.hotmart-fb:hover { background: var(--cta-hover, #9c4f22) !important; }

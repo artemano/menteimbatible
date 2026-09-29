@@ -92,9 +92,8 @@
 
   /* Checkout del libro en Hotmart (oferta de prelanzamiento $14, off=cc93nf0k; normal $29)
      con el order bump del sistema (+$23).
-     Se abre la página de pago completa (no la ventana emergente) para asegurar
-     que el order bump se muestre siempre. */
-  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?off=cc93nf0k";
+     checkoutMode=2 abre la ventana emergente de Hotmart (widget cargado al final de index.html). */
+  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?checkoutMode=2&off=cc93nf0k";
 
   document.querySelectorAll("[data-checkout]").forEach(function (a) {
     a.setAttribute("href", BOOK_CHECKOUT);
