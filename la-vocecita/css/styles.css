@@ -1788,3 +1788,7 @@ html.reader-open, html.reader-open body { overflow: hidden; }
   .reader .body-text p { font-size: 17.5px; }
   .rb-end { padding: 34px 22px; }
 }
+
+/* ---------- precio de prelanzamiento ---------- */
+.price-block .price .was { font-size: 0.42em; font-weight: 400; color: var(--warm-gray); margin-right: 0.3em; vertical-align: middle; }
+.upsell-price .row s { color: var(--warm-gray); margin-right: 4px; }
