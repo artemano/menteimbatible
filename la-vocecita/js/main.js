@@ -90,10 +90,10 @@
 (function () {
   "use strict";
 
-  /* Checkout del libro en Hotmart (oferta de prelanzamiento $14, off=cc93nf0k; normal $29)
+  /* Checkout del libro en Hotmart (prelanzamiento $14 con offDiscount=PRELANZAMIENTO; normal $29)
      con el order bump del sistema (+$23).
      checkoutMode=2 abre la ventana emergente de Hotmart (widget cargado al final de index.html). */
-  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?checkoutMode=2&off=cc93nf0k";
+  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?checkoutMode=2&offDiscount=PRELANZAMIENTO";
 
   document.querySelectorAll("[data-checkout]").forEach(function (a) {
     a.setAttribute("href", BOOK_CHECKOUT);
