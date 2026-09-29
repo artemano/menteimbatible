@@ -90,10 +90,11 @@
 (function () {
   "use strict";
 
-  /* Checkout del libro en Hotmart ($29 USD) con el order bump del curso (+$8,90).
+  /* Checkout del libro en Hotmart (precio de prelanzamiento $14 con el cupón PRELANZAMIENTO; normal $29)
+     con el order bump del sistema (+$23).
      Se abre la página de pago completa (no la ventana emergente) para asegurar
      que el order bump se muestre siempre. */
-  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?off=2qh6myos&checkoutMode=10";
+  var BOOK_CHECKOUT = "https://pay.hotmart.com/L107795089A?coupon=PRELANZAMIENTO";
 
   document.querySelectorAll("[data-checkout]").forEach(function (a) {
     a.setAttribute("href", BOOK_CHECKOUT);
